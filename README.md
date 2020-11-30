@@ -12,14 +12,20 @@
 # Allocation of Education Funds
 ## Executive Summary:
 • UNICEF is a non-profit organization serving children in more than 190 countries.
+
 • The World Bank is an institution that provides both loans and grants to impoverished areas around the world.
+
 • By collecting data from both of these sources, we will analyze the relationship between them on education levels.
+
 • We will look into the World Bank’s past funding and UNICEF’s data on education rates to discover the connection between the allocation of World Bank investments to educational levels around the world.
 
 ## Business Use Case:
 • There are 195 countries in the world, but a limited amount of money. How does the World Bank distribute its loans and grant? 
+
 • Based on education levels worldwide, is the World Bank distributing its funds properly?
+
 • We will analyze past World Bank education funding and compare it to UNICEF data to see if in years since the funding, education levels have risen in those countries.
+
 • We will also study current education rates to make recommendations for future allocation of World Bank funds.
 
 ## Data Tools:
