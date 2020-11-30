@@ -1,4 +1,4 @@
-#Final Project: Allocation of Education Funds
+# Final Project: Allocation of Education Funds
 
 ## General objective:
 1. End to end process of gathering, preparing and storing data in databases.
