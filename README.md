@@ -35,3 +35,20 @@
 4. *Data Modeling:* Python & MySQL
 5. *Data Visualization:* Tableau & PowerBI
 
+## Data Modeling:
+• Data was cleaned using R, Python, Excel & OpenRefine.
+
+• After analyzing the databases we cleaned the redundant data in an iterative process.
+
+• We redefined some attributes of the database in order to have the best normalization possible.
+
+• We compiled the data from UNICEF and The World Bank into tables, forming an entity relationship model.
+
+## Data Considerations:
+• Primary keys were setted as integer (SMALLINT or TINYINT depending on the size of the table).
+
+• Data was processed and cleaned locally.
+
+• As we collected data from different databases, we had to cluster and unify both databases in order to have a unique final and coherent database. World Bank sometimes listed their projects regionally, in order to work with a unified database we changed it by country.
+
+• The two datasets are connected by country name keys in the region and countries table, respectively
