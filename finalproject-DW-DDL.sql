@@ -5,7 +5,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema finalproj
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `finalproj` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+CREATE SCHEMA IF NOT EXISTS `finalproj` DEFAULT CHARACTER SET utf8mb4 ;
 USE `finalproj` ;
 
 -- -----------------------------------------------------
@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`countries` (
   `countryname` VARCHAR(50) NULL DEFAULT NULL,
   PRIMARY KEY (`countrycode`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
@@ -28,15 +28,15 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`region` (
   `regionname` VARCHAR(50) NULL DEFAULT NULL,
   `countrycode` SMALLINT NULL DEFAULT NULL,
   PRIMARY KEY (`regioncode`),
-  INDEX `countrycode_idx` (`countrycode` ASC) VISIBLE,
+  INDEX `countrycode_idx` (`countrycode` ASC),
   CONSTRAINT `countrycode`
     FOREIGN KEY (`countrycode`)
     REFERENCES `finalproj`.`countries` (`countrycode`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
@@ -54,15 +54,15 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`project` (
   `supplementprojectflg` VARCHAR(10) NULL DEFAULT NULL,
   `regioncode` SMALLINT NULL DEFAULT NULL,
   PRIMARY KEY (`projectid`),
-  INDEX `regioncode_idx` (`regioncode` ASC) VISIBLE,
+  INDEX `regioncode_idx` (`regioncode` ASC),
   CONSTRAINT `regioncode`
     FOREIGN KEY (`regioncode`)
     REFERENCES `finalproj`.`region` (`regioncode`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
@@ -83,8 +83,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`borrower` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE INDEX `project_borrower_fk` ON `finalproj`.`borrower` (`projectid` ASC);
 
@@ -97,8 +97,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`condition_information` (
   `sex` VARCHAR(20) NULL DEFAULT NULL,
   PRIMARY KEY (`indicatorcode`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
  
 -- -----------------------------------------------------
@@ -118,8 +118,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`dates` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
  
 CREATE INDEX `project_dates_fk`  ON `finalproj`.`dates` (`projectid` ASC);
 
@@ -142,8 +142,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`money` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE INDEX `project_money_fk`  ON `finalproj`.`money` (`projectid` ASC);
 
@@ -157,8 +157,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`observation_information` (
   `data_source` VARCHAR(250) NULL DEFAULT NULL,
   PRIMARY KEY (`observationcode`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
@@ -170,8 +170,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`time_period` (
   `end_project` YEAR NULL DEFAULT NULL,
   PRIMARY KEY (`timecode`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
  
 -- -----------------------------------------------------
@@ -204,8 +204,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`observables` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 
 CREATE INDEX `countries_observables_fk`  ON `finalproj`.`observables` (`countrycode` ASC);
@@ -232,8 +232,8 @@ CREATE TABLE IF NOT EXISTS `finalproj`.`sector` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
+#COLLATE = utf8mb4_0900_ai_ci;
 
 CREATE INDEX `project_sector_fk`  ON `finalproj`.`sector` (`projectid` ASC);
 
