@@ -1,7 +1,8 @@
 # Final Project: Allocation of Education Funds
 
 ## **DATA ENGINEERING PLATFORMS (MSCA 31012)**
-**Autors: Fernando Forero, Christopher Hein, Meghan Rokas and Ana Pilar Ysasi Cillero**
+**Team members: Fernando Forero, Christopher Hein, Meghan Rokas and Ana Pilar Ysasi Cillero**
+**Autor: Ana Pilar Ysasi Cillero**
 
 ## General objective of the project:
 1. End to end process of gathering, preparing and storing data in databases.
