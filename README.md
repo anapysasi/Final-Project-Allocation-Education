@@ -33,7 +33,7 @@
 ## Data Tools:
 1. *Data Sources:* https://data.unicef.org/dv_index/ (Unicef data) & https://projects.worldbank.org/en/projects-operations/projects-list (World Bank data)
 2. *Data Processing:* R, Python & OpenRefine
-3. *Data Warehouse:* Google Drive & Google Cloud
+3. *Data Warehouse:* Google Drive & Google Cloud Platform
 4. *Data Modeling:* Python & MySQL
 5. *Data Visualization:* Tableau & PowerBI
 
