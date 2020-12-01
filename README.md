@@ -51,6 +51,6 @@
 
 • Data was processed and cleaned locally.
 
-• As we collected data from different databases, we had to cluster and unify both databases in order to have a unique final and coherent database. World Bank sometimes listed their projects regionally, in order to work with a unified database we changed it by country.
+• As we collected data from different databases, we had to cluster and unify both databases in order to have a unique final and coherent database; i.e. The World Bank sometimes listed their projects regionally, in order to work with a unified database we changed it by country.
 
 • The two datasets are connected by country name keys in the region and countries table, respectively
