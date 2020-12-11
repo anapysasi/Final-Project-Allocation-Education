@@ -14,4 +14,4 @@ In order to get the nodes once you run the code in Neo4j, you need to click on t
 
 Once you have all the tables on the `Import` Folder, you can run the code from the document `AllocationEducationGraphDatabase.txt` to get the Graph Database.
 
-If instead of making just a subset of the Data, you want to get all the Nodes from the Databse, the different tables as csv files are uploaded in CSVtables Folder. The process would be the same.
+If instead of making just a subset of the Data, you want to get all the Nodes from the Databse, the different tables as csv files are uploaded in `CSVtables` Folder. The process would be the same.
