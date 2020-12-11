@@ -8,8 +8,10 @@ For that reason we will upload the different tables used in the study for the fo
 4. Argentina
 5. Armenia
 
-The different tables for the subset of the database is upload in this folder. 
+The different tables for the subset of the database are upload in this folder as csv files. 
 
 In order to get the nodes once you run the code in Neo4j, you need to click on the three dots on the upper rigth corner of the Database (in the Neo4j Deskop App) and click on `Manage`. Then, click on the down arrow of `Open Folder` and then click on `Import`. Copy all the csv to this Folder.
 
 Once you have all the tables on the `Import` Folder, you can run the code from the document `AllocationEducationGraphDatabase.txt` to get the Graph Database.
+
+If instead of making just a subset of the Data, you want to get all the Nodes from the Databse, the different tables as csv files are uploaded in CSVtables Folder. The process would be the same.
