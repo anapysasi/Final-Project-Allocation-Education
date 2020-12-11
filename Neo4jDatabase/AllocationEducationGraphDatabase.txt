@@ -30,7 +30,7 @@ MERGE (country:COUNTRY {countryID: row.countrycode})
 
 LOAD CSV WITH HEADERS FROM 'file:///condition_information.csv' AS row
 MERGE (indicator:INDICATOR {indicatorID: row.indicatorcode})
-  ON CREATE SET indicator.category = row.indicator, indicator.sex = row.sex;
+  ON CREATE SET indicator.category = row.indicator;
 
 LOAD CSV WITH HEADERS FROM 'file:///observation_information.csv' AS row
 MERGE (observation:OBS {observationID: row.observationcode})
@@ -47,9 +47,9 @@ CREATE INDEX datesID FOR (d:DATES) ON (d.datesID);
 CREATE INDEX sectorID FOR (s:SECTOR) ON (s.sectorID);
 CREATE INDEX moneyID FOR (m:MONEY) ON (m.money);
 CREATE INDEX regionID FOR (r:REGION) ON (r.regionID);
-CREATE INDEX countryID FOR (c:COUNTRY) ON (c.countryID);
-CREATE INDEX indicatorID FOR (i:INDICATOR) ON (i.indicatorID);
-CREATE INDEX indCategory FOR (i:INDICATOR) ON (i.category);
+CREATE INDEX countryID FOR (c:COUNTRY) ON (c.countryID); 
+CREATE INDEX indCategory FOR (i:INDICATOR) ON (i.indicatorID);
+CREATE INDEX indicatorID FOR (i:INDICATOR) ON (i.category);
 CREATE INDEX observationID FOR (o:OBS) ON (o.observationID);
 CREATE INDEX timeID FOR (t:TIME) ON (t.timeID);
 
@@ -85,6 +85,6 @@ MERGE (country)-[ci:IND_WHERE]->(indicator);
 MATCH (indicator:INDICATOR), (observation:OBS)
 MERGE (indicator)-[io:VALUE]->(observation);
 
-// Create relationships between indicator and obs_value 
+// Create relationships between indicator and time_period 
 MATCH (indicator:INDICATOR), (time:TIME)
 MERGE (indicator)-[it:IND_YEAR]->(time);
