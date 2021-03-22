@@ -66,7 +66,7 @@ In this project we pretend that the World Bank is our client and we are asked to
 ## Insights
 • Grants in education projects are very small compared to other segments within the bank (less than 10%).
 
-• Grants represent <img src="https://render.githubusercontent.com/render/math?math=4%"> of the total amount invested in education by The World Bank.
+• Grants represent <img src="https://render.githubusercontent.com/render/math?math=4\{%}"> of the total amount invested in education by The World Bank.
 
 • Correlation between total amount of investment and the average UNICEF indicators is very low (Total <img src="https://render.githubusercontent.com/render/math?math=R^2 = 0.04">).
 
