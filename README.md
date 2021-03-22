@@ -1,8 +1,8 @@
 # Final-Project-Allocation-Education
 
-### Team members: Fernando Forero, Christopher Hein, Meghan Rokas and Ana Pilar Ysasi Cillero**
+### Team members: Fernando Forero, Christopher Hein, Meghan Rokas and Ana Pilar Ysasi Cillero
 
-## Author: Ana Pilar Ysasi Cillero**
+## Author: Ana Pilar Ysasi Cillero
 
 Final project for Shree Bharadwaj's Data Engineering Platforms course at the University of Chicago's Master of Science in Analytics.
 
