@@ -1,9 +1,17 @@
-# Final Project: Allocation of Education Funds
+# Final-Project-Allocation-Education
 
-## **DATA ENGINEERING PLATFORMS (MSCA 31012)**
-**Team members: Fernando Forero, Christopher Hein, Meghan Rokas and Ana Pilar Ysasi Cillero**
+### Team members: Fernando Forero, Christopher Hein, Meghan Rokas and Ana Pilar Ysasi Cillero**
 
-**Autor: Ana Pilar Ysasi Cillero**
+## Author: Ana Pilar Ysasi Cillero**
+
+Final project for Shree Bharadwaj's Data Engineering Platforms course at the University of Chicago's Master of Science in Analytics.
+
+---
+## Description:
+
+In this project we pretend that the World Bank is our client and we are asked to study the relationship between the allocation of student funds granted by the World Bank with the real situation (in terms of education) of the countries where the money is distributed. To do this, we analyze the education indicators provided by UNICEF in these regions with respect to how much money they are receiving.
+
+---
 
 ## General objective of the project:
 1. End to end process of gathering, preparing and storing data in databases.
@@ -58,7 +66,7 @@
 ## Insights
 • Grants in education projects are very small compared to other segments within the bank (less than 10%).
 
-• Grants represent 4% of the total amount invested in education by The World Bank.
+• Grants represent <img src="https://render.githubusercontent.com/render/math?math=4\%"> of the total amount invested in education by The World Bank.
 
 • Correlation between total amount of investment and the average UNICEF indicators is very low (Total <img src="https://render.githubusercontent.com/render/math?math=R^2 = 0.04">).
 
