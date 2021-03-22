@@ -60,7 +60,7 @@
 
 • Grants represent 4% of the total amount invested in education by The World Bank.
 
-• Correlation between total amount of investment and the average UNICEF indicators is very low (Total r-squared = 0.04).
+• Correlation between total amount of investment and the average UNICEF indicators is very low (Total <img src="https://render.githubusercontent.com/render/math?math=R^2 = 0.04">).
 
 • “Specific Investment Loans” is the main strategy used by The World Bank when providing loans to countries (More than double of the next strategy – “Development Policy Lending”)
 
