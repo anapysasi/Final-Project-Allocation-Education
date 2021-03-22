@@ -31,7 +31,7 @@
 • We will also study current education rates to make recommendations for future allocation of World Bank funds.
 
 ## Data Tools:
-1. *Data Sources:* https://data.unicef.org/dv_index/ (Unicef data) & https://projects.worldbank.org/en/projects-operations/projects-list (World Bank data)
+1. *Data Sources:* ![Unicef data](https://data.unicef.org/dv_index/) & ![World Bank data](https://projects.worldbank.org/en/projects-operations/projects-list)
 2. *Data Processing:* R, Python & OpenRefine
 3. *Data Warehouse:* Google Drive & Google Cloud Platform
 4. *Data Modeling:* Python & MySQL
