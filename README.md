@@ -57,15 +57,24 @@
 
 ## Insights
 • Grants in education projects are very small compared to other segments within the bank (less than 10%).
+
 • Grants represent 4% of the total amount invested in education by The World Bank.
+
 • Correlation between total amount of investment and the average UNICEF indicators is very low (Total r-squared = 0.04).
+
 • “Specific Investment Loans” is the main strategy used by The World Bank when providing loans to countries (More than double of the next strategy – “Development Policy Lending”)
+
 • There is no clear relation between the indicators and the countries which are receiving the investments. Based on their attendance and completion rates, countries are receiving a disproportionate size of investment: countries with larger indicators are the ones receiving the most money.
 
 ## Recommendations
 • The World Bank needs to utilize the data available to them to improve their decision making when determining where to allocate their funds.
+
 • UNICEF’s education indicators should be referenced when determining where to invest, as the relation between investments and the indicator values are very low.
+
 • Investments should be also analyzed at a country/region level to be able to guarantee that the bank is investing in regions with the most need. 
+
 •  Based on the insights we’ve seen in the education trends world-wide, we see room for improvement. 
+
 •  The UNICEF education dataset helped to unveil a disconnect in funding and education levels. Additional data from other sources would assist in this analysis.
+
 •  We suggest the World Bank consider UNICEF’s (and other organization’s) databases and include them in their future decision making practices.
